@@ -102,40 +102,14 @@ var Signature = function () {
 
     Signature.signBuffer = function signBuffer(buf, private_key) {
         var _hash = (0, _hash2.sha256)(buf);
-        var signature = Signature.signBufferSha256V2(_hash, private_key);
+        var signature = Signature.signBufferSha256(_hash, private_key);
         var times = 0;
         while (!signature.isCanonical()) {
-            signature = Signature.signBufferSha256V2(_hash, private_key);
+            signature = Signature.signBufferSha256(_hash, private_key);
             if (times++ > 10) {
                 console.log('WARN: ECDSA tried', times, 'times');
             }
         }
-        return signature;
-    };
-
-    Signature.signBufferSha256V2 = function signBufferSha256V2(_hash, private_key) {
-        var nonce = 0,
-            sig = null,
-            sigDER = null;
-        while (true) {
-            sig = secp256k1Lib.sign(_hash, private_key.toBuffer(), {
-                noncefn: function noncefn() {
-                    return (0, _hash2.sha256)(new Buffer(_hash + nonce++));
-                }
-            });
-            sigDER = secp256k1Lib.signatureExport(sig.signature);
-            var lenR = sigDER[3];
-            var lenS = sigDER[5 + lenR];
-            if (lenR === 32 && lenS === 32) {
-                break;
-            }
-            if (nonce % 10 === 0) {
-                console.log("WARN: " + nonce + " attempts to find canonical signature");
-            }
-        }
-
-        var ecsig = _ecsignature2.default.fromDER(sigDER);
-        var signature = new Signature(ecsig.r, ecsig.s, sig.recovery + 31);
         return signature;
     };
 
