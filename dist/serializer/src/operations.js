@@ -1,10 +1,8 @@
 'use strict';
 
 exports.__esModule = true;
-exports.signature = exports.stealth_memo_data = exports.signed_transaction = exports.transaction = exports.proxy_transfer = exports.signed_proxy_transfer_params = exports.proxy_transfer_params = exports.data_transaction_datasource_validate_error = exports.data_transaction_datasource_upload = exports.data_transaction_pay = exports.data_transaction_update = exports.data_transaction_create = exports.balance_unlock = exports.balance_lock = exports.data_transaction_complain = exports.datasource_copyright_clear = exports.league_update = exports.league_create = exports.league_data_product_update = exports.league_data_product_create = exports.free_data_product_update = exports.free_data_product_create = exports.data_market_category_update = exports.data_market_category_create = exports.stale_league_update = exports.stale_league_create = exports.stale_league_data_product_update = exports.stale_league_data_product_create = exports.stale_free_data_product_update = exports.stale_free_data_product_create = exports.stale_data_market_category_update = exports.stale_data_market_category_create = exports.account_upgrade_data_transaction_member = exports.account_upgrade_datasource = exports.account_upgrade_merchant = exports.staking_update = exports.staking_create = exports.inter_contract_call = exports.inline_transfer = exports.trust_node_pledge_withdraw = exports.update_contract = exports.call_contract = exports.create_contract = exports.contract_asset = exports.abi_def = exports.error_message = exports.clause_pair = exports.table_def = exports.action_def = exports.struct_def = exports.field_def = exports.type_def = exports.asset_claim_fees = exports.asset_settle_cancel = exports.transfer_from_blind = exports.blind_transfer = exports.blind_input = exports.transfer_to_blind = exports.blind_output = exports.stealth_confirmation = exports.override_transfer = exports.balance_claim = exports.assert = exports.block_id_predicate = exports.asset_symbol_eq_lit_predicate = exports.account_name_eq_lit_predicate = exports.custom = exports.worker_create = exports.burn_worker_initializer = undefined;
+exports.signature = exports.stealth_memo_data = exports.signed_transaction = exports.transaction = exports.proxy_transfer = exports.signed_proxy_transfer_params = exports.proxy_transfer_params = exports.data_transaction_datasource_validate_error = exports.data_transaction_datasource_upload = exports.data_transaction_pay = exports.data_transaction_update = exports.data_transaction_create = exports.balance_unlock = exports.balance_lock = exports.data_transaction_complain = exports.datasource_copyright_clear = exports.league_update = exports.league_create = exports.league_data_product_update = exports.league_data_product_create = exports.free_data_product_update = exports.free_data_product_create = exports.data_market_category_update = exports.data_market_category_create = exports.stale_league_update = exports.stale_league_create = exports.stale_league_data_product_update = exports.stale_league_data_product_create = exports.stale_free_data_product_update = exports.stale_free_data_product_create = exports.stale_data_market_category_update = exports.stale_data_market_category_create = exports.account_upgrade_data_transaction_member = exports.account_upgrade_datasource = exports.account_upgrade_merchant = exports.witness_unbanned = exports.witness_set_commission = exports.staking_claim = exports.staking_update = exports.staking_create = exports.inter_contract_call = exports.inline_transfer = exports.trust_node_pledge_withdraw = exports.update_contract = exports.call_contract = exports.create_contract = exports.contract_asset = exports.abi_def = exports.error_message = exports.clause_pair = exports.table_def = exports.action_def = exports.struct_def = exports.field_def = exports.type_def = exports.asset_claim_fees = exports.asset_settle_cancel = exports.transfer_from_blind = exports.blind_transfer = exports.blind_input = exports.transfer_to_blind = exports.blind_output = exports.stealth_confirmation = exports.override_transfer = exports.balance_claim = exports.assert = exports.block_id_predicate = exports.asset_symbol_eq_lit_predicate = exports.account_name_eq_lit_predicate = exports.custom = exports.worker_create = exports.burn_worker_initializer = undefined;
 exports.vesting_balance_worker_initializer = exports.refund_worker_initializer = exports.vesting_balance_withdraw = exports.vesting_balance_create = exports.cdd_vesting_policy_initializer = exports.linear_vesting_policy_initializer = exports.committee_member_update_global_parameters = exports.chain_parameters = exports.committee_member_update = exports.committee_member_create = exports.withdraw_permission_delete = exports.withdraw_permission_claim = exports.withdraw_permission_update = exports.withdraw_permission_create = exports.proposal_delete = exports.proposal_update = exports.proposal_create = exports.op_wrapper = exports.witness_update = exports.witness_create = exports.asset_publish_feed = exports.price_feed = exports.asset_global_settle = exports.asset_settle = exports.asset_fund_fee_pool = exports.asset_reserve = exports.asset_issue = exports.asset_update_feed_producers = exports.asset_update_bitasset = exports.asset_update = exports.asset_create = exports.bitasset_options = exports.asset_options = exports.price = exports.account_transfer = exports.fba_distribute_operation = exports.account_upgrade = exports.account_whitelist = exports.account_update = exports.account_create = exports.account_options = exports.authority = exports.fill_order = exports.call_order_update = exports.limit_order_cancel = exports.limit_order_create = exports.transfer = exports.memo_data = exports.signed_block_header = exports.block_header = exports.signed_block = exports.processed_transaction = exports.asset = exports.void_result = exports.fee_schedule = exports.asset_claim_fees_operation_fee_parameters = exports.asset_settle_cancel_operation_fee_parameters = exports.transfer_from_blind_operation_fee_parameters = exports.blind_transfer_operation_fee_parameters = exports.transfer_to_blind_operation_fee_parameters = exports.override_transfer_operation_fee_parameters = exports.balance_claim_operation_fee_parameters = exports.assert_operation_fee_parameters = exports.custom_operation_fee_parameters = exports.worker_create_operation_fee_parameters = exports.vesting_balance_withdraw_operation_fee_parameters = exports.vesting_balance_create_operation_fee_parameters = exports.committee_member_update_global_parameters_operation_fee_parameters = exports.committee_member_update_operation_fee_parameters = exports.committee_member_create_operation_fee_parameters = exports.withdraw_permission_delete_operation_fee_parameters = exports.withdraw_permission_claim_operation_fee_parameters = exports.withdraw_permission_update_operation_fee_parameters = exports.withdraw_permission_create_operation_fee_parameters = exports.proposal_delete_operation_fee_parameters = exports.proposal_update_operation_fee_parameters = exports.proposal_create_operation_fee_parameters = exports.witness_update_operation_fee_parameters = exports.witness_create_operation_fee_parameters = exports.asset_publish_feed_operation_fee_parameters = exports.asset_global_settle_operation_fee_parameters = exports.asset_settle_operation_fee_parameters = exports.asset_fund_fee_pool_operation_fee_parameters = exports.asset_reserve_operation_fee_parameters = exports.asset_issue_operation_fee_parameters = exports.asset_update_feed_producers_operation_fee_parameters = exports.asset_update_bitasset_operation_fee_parameters = exports.asset_update_operation_fee_parameters = exports.asset_create_operation_fee_parameters = exports.account_transfer_operation_fee_parameters = exports.account_upgrade_operation_fee_parameters = exports.account_whitelist_operation_fee_parameters = exports.account_update_operation_fee_parameters = exports.account_create_operation_fee_parameters = exports.fill_order_operation_fee_parameters = exports.call_order_update_operation_fee_parameters = exports.limit_order_cancel_operation_fee_parameters = exports.limit_order_create_operation_fee_parameters = exports.transfer_operation_fee_parameters = exports.operation = undefined;
-
-var _ref, _ref2;
 
 var _types = require('./types');
 
@@ -889,7 +887,7 @@ var inter_contract_call = exports.inter_contract_call = new Serializer('inter_co
   extensions: set(future_extensions)
 });
 
-var staking_create = exports.staking_create = new Serializer('staking_create', (_ref = {
+var staking_create = exports.staking_create = new Serializer('staking_create', {
   fee: asset,
   owner: protocol_id_type('account'),
   trust_node: protocol_id_type('witness'),
@@ -897,19 +895,39 @@ var staking_create = exports.staking_create = new Serializer('staking_create', (
   program_id: string,
   create_date_time: time_point_sec,
   weight: uint32,
-  staking_days: uint32
-}, _ref['staking_days'] = set(future_extensions), _ref));
+  staking_days: uint32,
+  extensions: set(future_extensions)
+});
 
-var staking_update = exports.staking_update = new Serializer('staking_update', (_ref2 = {
+var staking_update = exports.staking_update = new Serializer('staking_update', {
   fee: asset,
   owner: protocol_id_type('account'),
   trust_node: protocol_id_type('witness'),
-  amount: asset,
-  program_id: string,
-  create_date_time: time_point_sec,
-  weight: uint32,
-  staking_days: uint32
-}, _ref2['staking_days'] = set(future_extensions), _ref2));
+  staking_id: protocol_id_type('staking'),
+  extensions: set(future_extensions)
+});
+
+var staking_claim = exports.staking_claim = new Serializer('staking_claim', {
+  fee: asset,
+  owner: protocol_id_type('account'),
+  staking_id: protocol_id_type('staking'),
+  extensions: set(future_extensions)
+});
+
+var witness_set_commission = exports.witness_set_commission = new Serializer('witness_set_commission', {
+  fee: asset,
+  witness: protocol_id_type('witness'),
+  witness_account: protocol_id_type('account'),
+  commission_rate: uint32,
+  extensions: set(future_extensions)
+});
+
+var witness_unbanned = exports.witness_unbanned = new Serializer('witness_unbanned', {
+  fee: asset,
+  witness: protocol_id_type('witness'),
+  witness_account: protocol_id_type('account'),
+  extensions: set(future_extensions)
+});
 
 // ---------------------
 //  data products & leagues, not implemented yet, since now
@@ -1042,7 +1060,7 @@ var proxy_transfer = exports.proxy_transfer = new Serializer('proxy_transfer', {
   extensions: set(future_extensions)
 });
 
-operation.st_operations = [transfer, limit_order_create, limit_order_cancel, call_order_update, fill_order, account_create, account_update, account_whitelist, account_upgrade, account_transfer, asset_create, asset_update, asset_update_bitasset, asset_update_feed_producers, asset_issue, asset_reserve, asset_fund_fee_pool, asset_settle, asset_global_settle, asset_publish_feed, witness_create, witness_update, proposal_create, proposal_update, proposal_delete, withdraw_permission_create, withdraw_permission_update, withdraw_permission_claim, withdraw_permission_delete, committee_member_create, committee_member_update, committee_member_update_global_parameters, vesting_balance_create, vesting_balance_withdraw, worker_create, custom, assert, balance_claim, override_transfer, transfer_to_blind, blind_transfer, transfer_from_blind, asset_settle_cancel, asset_claim_fees, fba_distribute_operation, account_upgrade_merchant, account_upgrade_datasource, stale_data_market_category_create, stale_data_market_category_update, stale_free_data_product_create, stale_free_data_product_update, stale_league_data_product_create, stale_league_data_product_update, stale_league_create, stale_league_update, data_transaction_create, data_transaction_update, data_transaction_pay, account_upgrade_data_transaction_member, data_transaction_datasource_upload, data_transaction_datasource_validate_error, data_market_category_create, data_market_category_update, free_data_product_create, free_data_product_update, league_data_product_create, league_data_product_update, league_create, league_update, datasource_copyright_clear, data_transaction_complain, balance_lock, balance_unlock, proxy_transfer, create_contract, call_contract, update_contract, trust_node_pledge_withdraw, inline_transfer, inter_contract_call];
+operation.st_operations = [transfer, limit_order_create, limit_order_cancel, call_order_update, fill_order, account_create, account_update, account_whitelist, account_upgrade, account_transfer, asset_create, asset_update, asset_update_bitasset, asset_update_feed_producers, asset_issue, asset_reserve, asset_fund_fee_pool, asset_settle, asset_global_settle, asset_publish_feed, witness_create, witness_update, proposal_create, proposal_update, proposal_delete, withdraw_permission_create, withdraw_permission_update, withdraw_permission_claim, withdraw_permission_delete, committee_member_create, committee_member_update, committee_member_update_global_parameters, vesting_balance_create, vesting_balance_withdraw, worker_create, custom, assert, balance_claim, override_transfer, transfer_to_blind, blind_transfer, transfer_from_blind, asset_settle_cancel, asset_claim_fees, fba_distribute_operation, account_upgrade_merchant, account_upgrade_datasource, stale_data_market_category_create, stale_data_market_category_update, stale_free_data_product_create, stale_free_data_product_update, stale_league_data_product_create, stale_league_data_product_update, stale_league_create, stale_league_update, data_transaction_create, data_transaction_update, data_transaction_pay, account_upgrade_data_transaction_member, data_transaction_datasource_upload, data_transaction_datasource_validate_error, data_market_category_create, data_market_category_update, free_data_product_create, free_data_product_update, league_data_product_create, league_data_product_update, league_create, league_update, datasource_copyright_clear, data_transaction_complain, balance_lock, balance_unlock, proxy_transfer, create_contract, call_contract, update_contract, trust_node_pledge_withdraw, inline_transfer, inter_contract_call, staking_create, staking_update, staking_claim, witness_set_commission, witness_unbanned];
 
 var transaction = exports.transaction = new Serializer('transaction', {
   ref_block_num: uint16,

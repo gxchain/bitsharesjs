@@ -24,11 +24,9 @@ var _PublicKey = require('./PublicKey');
 
 var _PublicKey2 = _interopRequireDefault(_PublicKey);
 
-var _ecsignature = require('./ecsignature');
-
-var _ecsignature2 = _interopRequireDefault(_ecsignature);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import ECSignature from './ecsignature';
 
 var secp256k1 = (0, _ecurve.getCurveByName)('secp256k1');
 var secp256k1Lib = require('secp256k1');
