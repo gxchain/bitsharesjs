@@ -893,7 +893,6 @@ var staking_create = exports.staking_create = new Serializer('staking_create', {
   trust_node: protocol_id_type('witness'),
   amount: asset,
   program_id: string,
-  create_date_time: time_point_sec,
   weight: uint32,
   staking_days: uint32,
   extensions: set(future_extensions)
